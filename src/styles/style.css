@@ -1,0 +1,112 @@
+.logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.hero,
+.about,
+.features {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about,
+.features {
+    background-color: #444;
+}
+
+.span-color {
+    color: #B91FDB;
+}
+
+.hero-logo {
+    width: 150px;
+    height: auto;
+}
+
+.hero-text p {
+    text-align: left;
+    font-size: 0.9em;
+    color: #f4f4f4;
+}
+
+
+.about-text {
+    max-width: 600px;
+}
+
+.about-photo {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.content,
+.features,
+.contact,
+.redes-sociais {
+    display: block;
+    align-items: center;
+}
+
+.content h2,
+.content p,
+.features h2,
+.features p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+    .hero {
+        flex-direction: column;
+        height: 300px;
+    }
+
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-photo {
+        width: 100%;
+        max-width: 300px;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    
+}
