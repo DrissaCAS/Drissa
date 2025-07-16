@@ -80,11 +80,34 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
+.gallery-tech {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 
+figure {
+    display: inline-block;
+    margin: 0 10px;
+    text-align: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+}
 
+figure svg {
+    margin: auto;
+    width: 70px;
+    height: 70px;
+    fill: #fff;
+}
 
-
-
+figure:hover svg {
+    fill: #B91FDB;
+    width: 90px;
+    height: 90px;
+}
 
 @media screen and (max-width: 500px) {
     .hero {
