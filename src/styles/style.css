@@ -15,12 +15,15 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: var(--text-color);
     text-decoration: none;
 }
 
 nav ul li a:hover {
     text-decoration: underline;
+    color: var(--secondary-color);
+    font-weight: bold;
+    transition: color 0.2s ease;
 }
 
 .hero,
@@ -38,7 +41,9 @@ nav ul li a:hover {
 }
 
 .span-color {
-    color: #602c6a;
+    color: #B891C0;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.2em;
 }
 
 .hero-logo {
@@ -88,7 +93,7 @@ nav ul li a:hover {
 }
 
 figure {
-    background-color: #602c6a;
+    background-color: var(--secondary-color);
     border-radius: 10px;
     display: inline-block;
     text-align: center;
@@ -96,6 +101,10 @@ figure {
     padding: 15px;
     width: 100px;
     height: 100px;
+}
+
+figure:hover {
+    background-color: var(--primary-color);
 }
 
 figure svg {

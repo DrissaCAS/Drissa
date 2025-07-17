@@ -1,14 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --primary-color: #602c6a;
+    --secondary-color: #B891C0;
+    --background-color: #333;
+    --secondary-bg-color: #555;
+    --text-color: #f4f4f4;
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Inter', sans-serif;
     text-decoration: none;
 }
 
 body {
-    background-color: #222;
-    color: #f4f4f4;
+    background-color: var(--background-color);
+    color: var(--text-color);
     line-height: 1.5;
 }
 
@@ -39,7 +50,6 @@ p {
 }
 
 section {
-    height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
