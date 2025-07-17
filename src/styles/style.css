@@ -38,7 +38,7 @@ nav ul li a:hover {
 }
 
 .span-color {
-    color: #B91FDB;
+    color: #602c6a;
 }
 
 .hero-logo {
@@ -84,29 +84,24 @@ nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    gap: 20px;
 }
 
 figure {
+    background-color: #602c6a;
+    border-radius: 10px;
     display: inline-block;
-    margin: 0 10px;
     text-align: center;
     justify-content: center;
+    padding: 15px;
     width: 100px;
     height: 100px;
 }
 
 figure svg {
-    margin: auto;
     width: 70px;
     height: 70px;
     fill: #fff;
-}
-
-figure:hover svg {
-    fill: #B91FDB;
-    width: 90px;
-    height: 90px;
 }
 
 @media screen and (max-width: 500px) {
