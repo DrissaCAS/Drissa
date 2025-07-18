@@ -1,5 +1,5 @@
 .logo {
-    width: 150px;
+    width: 200px;
     height: auto;
     margin-bottom: 10px;
 }
@@ -15,6 +15,7 @@ nav ul li {
 }
 
 nav ul li a {
+    margin: 0 20px;
     color: var(--text-color);
     text-decoration: none;
 }
@@ -37,7 +38,7 @@ nav ul li a:hover {
 
 .about,
 .features {
-    background-color: #444;
+    background-color: #111;
 }
 
 .span-color {
@@ -47,7 +48,7 @@ nav ul li a:hover {
 }
 
 .hero-logo {
-    width: 150px;
+    width: 250px;
     height: auto;
 }
 
@@ -57,13 +58,14 @@ nav ul li a:hover {
     color: #f4f4f4;
 }
 
-
-.about-text {
+.about-text,
+.hero-text {
     max-width: 600px;
 }
 
-.about-photo {
-    width: 200px;
+.about-photo,
+.hero-logo {
+    width: 300px;
     height: auto;
     border-radius: 10px;
     margin-left: 20px;

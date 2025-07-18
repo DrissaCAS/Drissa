@@ -4,7 +4,7 @@
 :root {
     --primary-color: #602c6a;
     --secondary-color: #B891C0;
-    --background-color: #333;
+    --background-color: #000;
     --secondary-bg-color: #555;
     --text-color: #f4f4f4;
 }
@@ -28,6 +28,8 @@ header,
 footer {
     width: 80%;
     margin: 0 auto;
+    padding: 20px;
+    align-items: center;
 }
 
 header {
@@ -41,6 +43,8 @@ nav {
 }
 
 h2 {
+    font-family: 'Dancing script', cursive;
+    font-size: 2.5em;
     margin-bottom: 20px;
 }
 
