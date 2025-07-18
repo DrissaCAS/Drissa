@@ -27,22 +27,15 @@ nav ul li a:hover {
     transition: color 0.2s ease;
 }
 
-.hero,
-.about,
-.features {
-    height: 400px;
+.hero {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.about,
-.features {
-    background-color: #111;
+    padding: 100px 0 150px 0;
 }
 
 .span-color {
-    color: #B891C0;
+    color: var(--secondary-color);
     font-family: 'Dancing Script', cursive;
     font-size: 2.2em;
 }
@@ -55,7 +48,21 @@ nav ul li a:hover {
 .hero-text p {
     text-align: left;
     font-size: 0.9em;
-    color: #f4f4f4;
+}
+
+.about {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: var(--secondary-bg-color);
+    padding: 100px 20 150px 20;
+}
+
+.about-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .about-text,
@@ -65,7 +72,7 @@ nav ul li a:hover {
 
 .about-photo,
 .hero-logo {
-    width: 300px;
+    width: 200px;
     height: auto;
     border-radius: 10px;
     margin-left: 20px;
@@ -77,6 +84,7 @@ nav ul li a:hover {
 .redes-sociais {
     display: block;
     align-items: center;
+    padding: 100px 0 150px 0;
 }
 
 .content h2,
@@ -107,6 +115,7 @@ figure {
 
 figure:hover {
     background-color: var(--primary-color);
+    transition: background-color 0.3s ease;
 }
 
 figure svg {
