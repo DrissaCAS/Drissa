@@ -6,175 +6,62 @@
     <title>Drissa CAS</title>
 
     <!-- CSS Stylesheet -->
-    <link rel="stylesheet" href="./src/styles/style-global.css">
     <link rel="stylesheet" href="./src/styles/style.css">
 
     <!-- Favicon -->
     <link rel="icon" href="./src/img/logos/ICON.png" type="image/x-icon">
 
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    
     <!--  FontAwesme  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Fonts -->
 
 </head>
 <body>
-    <header>
-        <img src="./src/img/logos/LOGO.png" alt="Logo Drissa CAS" class="logo">
-        <nav>
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#id-about">Sobre</a></li>
-                <li><a href="#id-tech">Tecnologias</a></li>
-                <li><a href="#id-projects">Projetos</a></li>
-                <li><a href="#id-contact">Contato</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <div class="headerBrand">
+            <img class="brandLogo" src="./src/img/logos/LOGO.png" alt="">
+
+        </div>
+
+        <i id="toggleTheme" class="bi bi-cloud-sun"></i>
     </header>
 
-    <main>
-        <section id="home" class="hero">
-            <div class="hero-text">
-                <h1>Olá, eu sou <span class="span-color">Drissa CAS</span></h1>
-                
-                <h3>Desenvolvedora Front End | Design Gráfico</h3>
-                
-                <p>Uma profissional apaixonada por tecnologia e design, pronta para transformar suas ideias em realidade digital.</p>
-            </div>
+    <nav>
+        <ul class="navbar navMobile">
+            <li class="navItem">
+                <a href="#home" class="navLink active">
+                    <i class="navIcon bi bi-house-door"></i>
+                    <span class="navText">Home</span>
+                </a>
+            </li>
             
-            <img src="./src/img/logos/ICON.png" alt="Logo Drissa CAS" class="hero-logo">
-        </section>
+            <li class="navItem">
+                <a href="#about" class="navLink">
+                    <i class="navIcon bi bi-person"></i>
+                    <span class="navText">Sobre</span>
+                </a>
+            </li>
 
-        <section id="id-about" class="about">
-            <h2>Sobre mim</h2>
+            <li class="navItem">
+                <a href="#project" class="navLink">
+                    <i class="navIcon bi bi-window-stack"></i>
+                    <span class="navText">Projetos</span>
+                </a>
+            </li>
             
-            <div class="about-main">
-                <div class="about-text">
-                    
-                    <p>Com uma formação em Análise de Sistemas e experiência em suporte técnico e design gráfico, transformo conceitos em soluções digitais. Sou proficiente em HTML, CSS, JavaScript, e ferramentas como Figma, Canva, Adobe Illustrator, Adobe Photoshop e GitHub, construindo interfaces funcionais e visualmente atraentes.</p>
-                    
-                    <p>Meu foco é criar experiências web intuitivas e impactantes. Busco projetos onde possa aplicar minha visão completa do desenvolvimento e design, entregando resultados que superem as expectativas.</p>
-                </div>
-                
-                <img src="./src/img/photo/POR-DO-SOL DARK.jpeg" alt="Foto em um lindo Por do Sol no Chile" class="about-photo">
-            </div>
-        </section>
+            <li class="navItem">
+                <a href="#contact" class="navLink">
+                    <i class="navIcon bi bi-chat-square-text"></i>
+                    <span class="navText">Contato</span>
+                </a>
+            </li>
 
-        <section id="id-tech" class="content">
-            <h2>Tecnologias e Ferramentas</h2>
-            
-            <p>Estou sempre atualizada com as últimas tendências e tecnologias. Aqui estão algumas das ferramentas e linguagens que utilizo:</p>
+        </ul>
+    </nav>
 
-            <div class="gallery-tech">
-                <figure class="html-logo">
-                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="60" viewBox="0 0 30 30">
-                        <path d="M25.428,3.333C25.238,3.121,24.967,3,24.683,3H5.317C5.033,3,4.762,3.121,4.572,3.333c-0.19,0.212-0.28,0.495-0.249,0.777 l2.202,19.823c0.044,0.403,0.329,0.74,0.719,0.851l7.48,2.137c0.09,0.026,0.183,0.039,0.275,0.039s0.185-0.013,0.275-0.039 l7.48-2.137c0.39-0.111,0.674-0.448,0.719-0.851L25.676,4.11C25.708,3.828,25.618,3.545,25.428,3.333z M20.629,10.43h-8.93 l0.212,2.542h8.503l-0.638,7.51L15.003,22l-0.047-0.015l-4.72-1.505L9.978,17.42h2.312l0.101,1.189l2.637,0.581l2.591-0.582 l0.275-3.213h-8.09L9.178,8h11.659L20.629,10.43z"></path>
-                    </svg>
-                </figure>
-                
-                <figure class="css-logo">
-                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="60" viewBox="0 0 30 30">
-                        <path d="M25.428,3.333C25.238,3.121,24.967,3,24.683,3H5.317C5.033,3,4.762,3.121,4.572,3.333c-0.19,0.212-0.28,0.495-0.249,0.777 l2.202,19.823c0.044,0.403,0.329,0.74,0.719,0.851l7.48,2.137c0.09,0.026,0.183,0.039,0.275,0.039s0.185-0.013,0.275-0.039 l7.48-2.137c0.39-0.111,0.674-0.448,0.719-0.851L25.676,4.11C25.708,3.828,25.618,3.545,25.428,3.333z M20.516,13.074l-0.446,7.285 l-5.038,1.647l-5.038-1.647l-0.191-3.484h2.55l0.064,1.584l2.615,0.887l2.615-0.887l0.191-2.85h-5.612l-0.127-2.534h5.867 l0.191-2.534H9.356L9.165,8.006h11.67L20.516,13.074z"></path>
-                    </svg>
-                </figure>
-                
-                <figure class="js-logo">
-                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
-                        <path d="M 43.335938 4 L 6.667969 4 C 5.195313 4 4 5.195313 4 6.667969 L 4 43.332031 C 4 44.804688 5.195313 46 6.667969 46 L 43.332031 46 C 44.804688 46 46 44.804688 46 43.335938 L 46 6.667969 C 46 5.195313 44.804688 4 43.335938 4 Z M 27 36.183594 C 27 40.179688 24.65625 42 21.234375 42 C 18.140625 42 15.910156 39.925781 15 38 L 18.144531 36.097656 C 18.75 37.171875 19.671875 38 21 38 C 22.269531 38 23 37.503906 23 35.574219 L 23 23 L 27 23 Z M 35.675781 42 C 32.132813 42 30.121094 40.214844 29 38 L 32 36 C 32.816406 37.335938 33.707031 38.613281 35.589844 38.613281 C 37.171875 38.613281 38 37.824219 38 36.730469 C 38 35.425781 37.140625 34.960938 35.402344 34.199219 L 34.449219 33.789063 C 31.695313 32.617188 29.863281 31.148438 29.863281 28.039063 C 29.863281 25.179688 32.046875 23 35.453125 23 C 37.878906 23 39.621094 23.84375 40.878906 26.054688 L 37.910156 27.964844 C 37.253906 26.789063 36.550781 26.328125 35.453125 26.328125 C 34.335938 26.328125 33.628906 27.039063 33.628906 27.964844 C 33.628906 29.109375 34.335938 29.570313 35.972656 30.28125 L 36.925781 30.691406 C 40.171875 32.078125 42 33.496094 42 36.683594 C 42 40.117188 39.300781 42 35.675781 42 Z"></path>
-                    </svg>
-                </figure>
-                
-                <figure class="figma-logo">
-                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
-                        <path d="M 18.5 2 C 13.81752 2 10 5.8175204 10 10.5 C 10 13.800292 11.949927 16.592855 14.708984 18 C 11.949927 19.407145 10 22.199708 10 25.5 C 10 28.800292 11.949927 31.592855 14.708984 33 C 11.949927 34.407145 10 37.199708 10 40.5 C 10 45.18248 13.81752 49 18.5 49 C 23.18248 49 27 45.18248 27 40.5 L 27 33 L 27 29.65625 C 28.341367 32.201717 30.932066 34 34 34 C 38.406436 34 42 30.406432 42 26 C 42 22.378246 39.526173 19.428685 36.214844 18.449219 C 39.553558 17.301707 42 14.220224 42 10.5 C 42 5.8175204 38.18248 2 33.5 2 L 26 2 L 18.5 2 z M 18.5 4 L 25 4 L 25 17 L 18.5 17 C 14.89848 17 12 14.10152 12 10.5 C 12 6.8984796 14.89848 4 18.5 4 z M 27 4 L 33.5 4 C 37.10152 4 40 6.8984796 40 10.5 C 40 14.10152 37.10152 17 33.5 17 L 27 17 L 27 4 z M 18.5 19 L 25 19 L 25 32 L 18.5 32 C 14.89848 32 12 29.10152 12 25.5 C 12 21.89848 14.89848 19 18.5 19 z M 27 19 L 30.34375 19 C 28.908839 19.756146 27.756146 20.908838 27 22.34375 L 27 19 z M 34 20 C 37.325556 20 40 22.674446 40 26 C 40 29.325554 37.325556 32 34 32 C 30.674444 32 28 29.325554 28 26 C 28 22.674446 30.674444 20 34 20 z M 18.5 34 L 25 34 L 25 40.5 C 25 44.10152 22.10152 47 18.5 47 C 14.89848 47 12 44.10152 12 40.5 C 12 36.89848 14.89848 34 18.5 34 z"></path>
-                    </svg>
-                </figure>
-                
-                <figure class="github-logo">
-                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
-                        <path d="M17.791,46.836C18.502,46.53,19,45.823,19,45v-5.4c0-0.197,0.016-0.402,0.041-0.61C19.027,38.994,19.014,38.997,19,39 c0,0-3,0-3.6,0c-1.5,0-2.8-0.6-3.4-1.8c-0.7-1.3-1-3.5-2.8-4.7C8.9,32.3,9.1,32,9.7,32c0.6,0.1,1.9,0.9,2.7,2c0.9,1.1,1.8,2,3.4,2 c2.487,0,3.82-0.125,4.622-0.555C21.356,34.056,22.649,33,24,33v-0.025c-5.668-0.182-9.289-2.066-10.975-4.975 c-3.665,0.042-6.856,0.405-8.677,0.707c-0.058-0.327-0.108-0.656-0.151-0.987c1.797-0.296,4.843-0.647,8.345-0.714 c-0.112-0.276-0.209-0.559-0.291-0.849c-3.511-0.178-6.541-0.039-8.187,0.097c-0.02-0.332-0.047-0.663-0.051-0.999 c1.649-0.135,4.597-0.27,8.018-0.111c-0.079-0.5-0.13-1.011-0.13-1.543c0-1.7,0.6-3.5,1.7-5c-0.5-1.7-1.2-5.3,0.2-6.6 c2.7,0,4.6,1.3,5.5,2.1C21,13.4,22.9,13,25,13s4,0.4,5.6,1.1c0.9-0.8,2.8-2.1,5.5-2.1c1.5,1.4,0.7,5,0.2,6.6c1.1,1.5,1.7,3.2,1.6,5 c0,0.484-0.045,0.951-0.11,1.409c3.499-0.172,6.527-0.034,8.204,0.102c-0.002,0.337-0.033,0.666-0.051,0.999 c-1.671-0.138-4.775-0.28-8.359-0.089c-0.089,0.336-0.197,0.663-0.325,0.98c3.546,0.046,6.665,0.389,8.548,0.689 c-0.043,0.332-0.093,0.661-0.151,0.987c-1.912-0.306-5.171-0.664-8.879-0.682C35.112,30.873,31.557,32.75,26,32.969V33 c2.6,0,5,3.9,5,6.6V45c0,0.823,0.498,1.53,1.209,1.836C41.37,43.804,48,35.164,48,25C48,12.318,37.683,2,25,2S2,12.318,2,25 C2,35.164,8.63,43.804,17.791,46.836z"></path>
-                    </svg>
-                </figure>
-
-                <figure class="canva-logo">
-                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
-                        <path d="M25,2C12.317,2,2,12.317,2,25s10.317,23,23,23s23-10.317,23-23S37.683,2,25,2z M24.109,39.954 c-6.781,0-11.176-5.086-11.176-12.782c0-9.942,6.888-17.128,14.639-17.128c4.69,0,7.486,2.361,7.486,5.573 c0,3.313-2.395,5.658-4.436,5.658c-0.508,0-0.764-0.249-0.764-0.661c0-0.917,1.478-2.295,1.478-4.896 c0-2.192-1.338-3.569-3.53-3.569c-4.69,0-10.029,5.541-10.029,15.124c0,5.657,2.809,9.753,7.346,9.753 c3.924,0,7.314-2.816,9.277-6.797c0.174-0.35,0.341-0.51,0.531-0.51c0.275,0,0.538,0.236,0.538,0.75 C35.467,32.793,31.306,39.954,24.109,39.954z"></path>
-                    </svg>
-                </figure>
-
-                <figure class="illustrator-logo">
-                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
-                        <path d="M 6 4 C 4.9 4 4 4.9 4 6 L 4 44 C 4 45.1 4.9 46 6 46 L 44 46 C 45.1 46 46 45.1 46 44 L 46 6 C 46 4.9 45.1 4 44 4 L 6 4 z M 19.929688 14 L 22.650391 14 L 27.449219 36 L 25.009766 36 L 23.619141 29.570312 L 18.820312 29.570312 L 17.400391 36 L 15 36 L 19.929688 14 z M 32.730469 14 C 33.660469 14 34.25 14.630547 34.25 15.560547 C 34.25 16.500547 33.660469 17.130859 32.730469 17.130859 L 32.699219 17.130859 C 31.879219 17.130859 31.25 16.500547 31.25 15.560547 C 31.25 14.630547 31.910469 14 32.730469 14 z M 21.230469 16.439453 C 20.970469 18.069453 20.650078 19.930391 20.330078 21.400391 L 19.230469 27 L 23.320312 27 L 22.189453 21.369141 C 21.869453 19.829141 21.580312 18.039453 21.320312 16.439453 L 21.230469 16.439453 z M 31.5 19 L 34 19 L 34 36 L 31.5 36 L 31.5 19 z"></path>
-                    </svg>
-                </figure>
-
-                <figure class="photoshop-logo">
-                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
-                        <path d="M 6 4 C 4.9 4 4 4.9 4 6 L 4 44 C 4 45.1 4.9 46 6 46 L 44 46 C 45.1 46 46 45.1 46 44 L 46 6 C 46 4.9 45.1 4 44 4 L 6 4 z M 18.580078 14 C 20.570078 14 22.260625 14.480313 23.390625 15.570312 C 24.410625 16.590312 24.949219 18.160781 24.949219 20.050781 C 24.949219 22.030781 24.470625 23.370938 23.640625 24.460938 C 22.490625 26.060938 20.470781 26.859375 18.550781 26.859375 C 18.140781 26.859375 17.820938 26.860078 17.460938 26.830078 L 17.460938 36 L 15 36 L 15 14.419922 C 15.99 14.159922 17.140078 14 18.580078 14 z M 18.980469 15.640625 C 18.400469 15.640625 17.919609 15.700781 17.599609 15.800781 L 17.599609 24.410156 C 17.889609 24.440156 18.179844 24.470703 18.589844 24.470703 C 20.989844 24.470703 22.619141 22.870078 22.619141 19.830078 C 22.619141 17.620078 21.730469 15.640625 18.980469 15.640625 z M 31.710938 20 C 32.980938 20 33.900312 20.390781 34.570312 20.800781 L 33.900391 22.669922 C 33.270391 22.249922 32.61 21.960938 31.75 21.960938 C 30.39 21.960938 29.689453 22.919219 29.689453 23.949219 C 29.689453 24.979219 30.089688 25.589141 31.679688 26.619141 C 33.539687 27.779141 35 29.219141 35 31.369141 C 35 34.489141 32.810391 36 30.150391 36 C 28.990391 36 27.7 35.649609 27 35.099609 L 27.630859 33.240234 C 28.200859 33.590234 29.190703 34.039062 30.220703 34.039062 C 31.650703 34.039062 32.580078 33.169062 32.580078 31.789062 C 32.580078 30.599062 32.149531 29.770234 30.519531 28.740234 C 28.429531 27.420234 27.300781 26.070547 27.300781 24.310547 C 27.300781 21.770547 29.220938 20 31.710938 20 z"></path>
-                    </svg>
-                </figure>
-                
-            </div>
-        </section>
-
-        <section id="#id-projects" class="features">
-            <h2>Projetos</h2>
-            <p>Confira alguns dos meus projetos mais recentes:</p>
-            <ul class="project-list">
-                <li>
-                    <h3>Projeto 1: Portfólio Pessoal</h3>
-                    <p>Um portfólio interativo que destaca minhas habilidades e projetos anteriores.</p>
-                </li>
-                <li>
-                    <h3>Projeto 2: Aplicativo de Tarefas</h3>
-                    <p>Um aplicativo web para gerenciamento de tarefas, desenvolvido com JavaScript e React.</p>
-                </li>
-                <li>
-                    <h3>Projeto 3: Site de E-commerce</h3>
-                    <p>Uma plataforma de e-commerce responsiva, utilizando HTML, CSS e JavaScript.</p>
-                </li>
-            </ul>
-        </section>
-
-        <section id="id-contact" class="contact">
-            <h2>Entre em contato</h2>
-            
-            <p>Para mais informações ou para discutir um projeto, sinta-se à vontade para me enviar uma mensagem.</p>    
-            
-            <p>Preencha o formulário abaixo:</p>
-            
-            <form action="#" method="post">
-                <label for="name">Nome:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Mensagem:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-
-        <section class="redes-sociais">
-            <h2>Redes Sociais</h2>
-            
-            <p>Você também pode me seguir nas redes sociais para ficar por dentro das novidades!</p>
-            <ul class="social-media">
-                <li><a href="https://www.facebook.com/drissacas" target="_blank">Facebook</a></li>
-                <li><a href="https://www.instagram.com/drissacas" target="_blank">Instagram</a></li>
-                <li><a href="https://www.twitter.com/drissacas" target="_blank">Twitter</a></li>
-                <li><a href="https://www.linkedin.com/company/drissacas" target="_blank">LinkedIn</a></li>
-            </ul>
-
-        </section>
-            
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Drissa CAS. Todos os direitos reservados.</p>
-    </footer>
 
 
 </body>

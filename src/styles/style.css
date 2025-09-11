@@ -1,150 +1,118 @@
-.logo {
-    width: 200px;
-    height: auto;
-    margin-bottom: 10px;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --primaryBg: #111111;
+    --secondaryBg: #F4F4F4;
+
+    --primaryColor: #602C6A;
+    --secondaryColor: #B891C0;
+
+    --primaryText: #EEEEEE;
+    --secondaryText: #555555;
 }
 
-nav ul {
-    list-style: none;
+* {
     padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    margin: 0 20px;
-    color: var(--text-color);
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
     text-decoration: none;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
-    color: var(--secondary-color);
-    font-weight: bold;
-    transition: color 0.2s ease;
+body {
+    background-color: var(--primaryBg);
+    font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--primaryText);
 }
 
-.hero {
+a {
+    text-decoration: none;
+    color: var(--primaryText);
+}
+
+i {
+    color: var(--primaryText);
+}
+
+li {
+    list-style: none;
+}
+
+/* Header styles */
+
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+
+.headerBrand .brandLogo {
+    width: auto;
+    height: 3.25rem;
+    
+}
+
+#toggleTheme {
+    font-size: 1.5rem;
+    color: var(--secondaryColor);
+    cursor: pointer;
+}
+
+/* Navbar styles */
+
+.navbar {
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 100px 0 150px 0;
+    background-color: var(--secondaryText);
 }
 
-.span-color {
-    color: var(--secondary-color);
-    font-family: 'Dancing Script', cursive;
-    font-size: 2.2em;
+.navItem {
+    width: 100%;
 }
 
-.hero-logo {
-    width: 250px;
-    height: auto;
+.navMobile {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    justify-content: space-between;
+    border-top: 1px solid var(--secondaryBg);
 }
 
-.hero-text p {
-    text-align: left;
-    font-size: 0.9em;
-}
-
-.about {
-    display: block;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    background-color: var(--secondary-bg-color);
-    padding: 100px 20 150px 20;
-}
-
-.about-main {
+.navMobile .navLink {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: center;
+    padding: 0.5rem 1rem;
+    gap: 0.5rem;
 }
 
-.about-text,
-.hero-text {
-    max-width: 600px;
+.navLink.active .navIcon,
+.navLink.active .navText {
+    color: var(--secondaryColor);
+    font-weight: 800;
 }
 
-.about-photo,
-.hero-logo {
-    width: 200px;
-    height: auto;
-    border-radius: 10px;
-    margin-left: 20px;
+.navIcon, .navText {
+    color: var(--primaryText);
 }
 
-.content,
-.features,
-.contact,
-.redes-sociais {
-    display: block;
-    align-items: center;
-    padding: 100px 0 150px 0;
+.navIcon {
+    font-size: 1.5rem;
 }
 
-.content h2,
-.content p,
-.features h2,
-.features p {
-    text-align: center;
-    margin-bottom: 20px;
+.navText {
+    font-size: 0.75rem;
+    text-transform: uppercase;
 }
 
-.gallery-tech {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
+/* Responsive styles */
 
-figure {
-    background-color: var(--secondary-color);
-    border-radius: 10px;
-    display: inline-block;
-    text-align: center;
-    justify-content: center;
-    padding: 15px;
-    width: 100px;
-    height: 100px;
-}
-
-figure:hover {
-    background-color: var(--primary-color);
-    transition: background-color 0.3s ease;
-}
-
-figure svg {
-    width: 70px;
-    height: 70px;
-    fill: #fff;
-}
-
-@media screen and (max-width: 500px) {
-    .hero {
-        flex-direction: column;
-        height: 300px;
-    }
-
-    .about {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .about-photo {
-        width: 100%;
-        max-width: 300px;
-        margin-left: 0;
-        margin-top: 20px;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 10px 0;
+@media screen and (min-width: 768px) {
+    .navMobile {
+        display: none;
     }
     
 }
