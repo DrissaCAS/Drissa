@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,15 +21,47 @@
 </head>
 <body>
     <header class="header">
+
+        <nav class="navHeader">
+            <ul class="navbar navMain">
+                <li class="navItem">
+                    <a href="#home" class="navLink active">
+                        <span class="navText">Home</span>
+                    </a>
+                </li>
+                
+                <li class="navItem">
+                    <a href="#about" class="navLink">
+                        <span class="navText">Sobre</span>
+                    </a>
+                </li>
+
+                <li class="navItem">
+                    <a href="#project" class="navLink">
+                        <span class="navText">Projetos</span>
+                    </a>
+                </li>
+                
+                <li class="navItem">
+                    <a href="#contact" class="navLink">
+                        <span class="navText">Contato</span>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
         <div class="headerBrand">
             <img class="brandLogo" src="./src/img/logos/LOGO.png" alt="">
-
         </div>
 
-        <i id="toggleTheme" class="bi bi-cloud-sun"></i>
+        <div class="headerToggle">
+            <i id="toggleTheme" class="bi bi-cloud-sun"></i>
+        </div>
+
     </header>
 
-    <nav>
+    <nav class="navContainerMobile">
         <ul class="navbar navMobile">
             <li class="navItem">
                 <a href="#home" class="navLink active">
@@ -62,6 +94,9 @@
         </ul>
     </nav>
 
+
+
+    
 
 
 </body>

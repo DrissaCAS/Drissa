@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-:root {
+:root, :root[data-theme='dark'] {
     --primaryBg: #111111;
     --secondaryBg: #F4F4F4;
 
@@ -9,6 +9,17 @@
 
     --primaryText: #EEEEEE;
     --secondaryText: #555555;
+}
+
+:root[data-theme='light'] {
+    --primaryBg: #F4F4F4;
+    --secondaryBg: #111111;
+
+    --primaryColor: #B891C0;
+    --secondaryColor: #602C6A;
+
+    --primaryText: #111111;
+    --secondaryText: #AAAAAA;
 }
 
 * {
@@ -30,6 +41,11 @@ a {
     color: var(--primaryText);
 }
 
+a:hover {
+    color: var(--secondaryColor);
+    font-weight: 800;
+}
+
 i {
     color: var(--primaryText);
 }
@@ -41,6 +57,7 @@ li {
 /* Header styles */
 
 .header {
+    width: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -48,10 +65,15 @@ li {
     padding: 0.5rem 1rem;
 }
 
+.headerToggle {
+    min-width: 20%;
+    display: flex;
+    justify-content: flex-end;
+}
+
 .headerBrand .brandLogo {
     width: auto;
     height: 3.25rem;
-    
 }
 
 #toggleTheme {
@@ -90,7 +112,9 @@ li {
 }
 
 .navLink.active .navIcon,
-.navLink.active .navText {
+.navLink.active .navText,
+.navLink:hover .navIcon,
+.navLink:hover .navText {
     color: var(--secondaryColor);
     font-weight: 800;
 }
@@ -108,11 +132,51 @@ li {
     text-transform: uppercase;
 }
 
+.navHeader {
+    display: none;
+}
+
+.navMain {
+    gap: 1rem;
+}
+
+
+/* Footer styles */
+
+footer {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid var(--secondaryBg);
+    margin-top: 2rem;
+    color: var(--primaryText);
+}
+
 /* Responsive styles */
 
 @media screen and (min-width: 768px) {
-    .navMobile {
+    .header {
+        position: fixed;
+        border-bottom: 1px solid var(--secondaryBg);
+        padding: 1rem 6rem;
+        background-color: var(--secondaryText);
+    }
+
+    .navContainerMobile {
         display: none;
     }
-    
+
+    .navHeader {
+        display: flex;
+    }
+
+    .navHeader,
+    .headerToggle {
+        min-width: 30%;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .header {
+        padding: 1rem 15rem;
+    }
 }
