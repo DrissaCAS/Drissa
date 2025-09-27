@@ -58,24 +58,6 @@ li {
     list-style: none;
 }
 
-footer {
-    width: 100%;
-    text-align: center;
-    border-top: 1px solid var(--secondaryBg);
-    margin-bottom: 5rem;
-}
-
-footer .footerContent {
-    padding: 1rem;
-}
-
-footer .footerText {
-    font-size: 0.875rem;
-    color: var(--primaryText);
-}
-
-
-
 /* Header styles */
 
 .header {
