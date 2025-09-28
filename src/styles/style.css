@@ -2,23 +2,27 @@
 
 :root, :root[data-theme='dark'] {
     --primaryBg: #111111;
-    --secondaryBg: #F4F4F4;
+
+    --sectionBg: #B891C0;
+    --sectionText: #111111;
 
     --primaryColor: #B891C0;
     --secondaryColor: #602C6A;
 
     --primaryText: #EEEEEE;
-    --secondaryText: #555555;
+    --secondaryText: #111111;
 }
 
 :root[data-theme='light'] {
     --primaryBg: #F4F4F4;
-    --secondaryBg: #111111;
+    
+    --sectionBg: #602C6A;
+    --sectionText: #EEEEEE;
 
     --primaryColor: #602C6A;
     --secondaryColor: #B891C0;
 
-    --primaryText: #555555;
+    --primaryText: #111111;
     --secondaryText: #EEEEEE;
 }
 
@@ -48,14 +52,12 @@ h1 {
 
 h2, h3, h4, h5, h6 {
     font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
-    color: var(--primaryText);
     text-transform: uppercase;
 }
 
 p {
     font-size: 1.25rem;
     line-height: 1.25;
-    color: var(--primaryText);
 }
 
 a {
@@ -227,7 +229,52 @@ main {
     gap: 1rem;
 }
 
+/* Section styles */
 
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2.5rem 1rem;
+}
+
+.sectionTitle {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.about {
+    background-color: var(--sectionBg);
+    color: var(--sectionText);
+}
+
+.technologiesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+    justify-items: center;
+}
+
+.technologiesItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: center;
+}
+
+.technologiesIcon {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    filter:invert(1);
+    transition: filter 0.3s ease;
+}
+
+html[data-theme='light'] .technologiesIcon {
+    filter:invert(0);
+}
 
 /* Footer styles */
 
