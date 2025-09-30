@@ -2,6 +2,7 @@
 
 :root, :root[data-theme='dark'] {
     --primaryBg: #111111;
+    --secondaryBg: #F4F4F4;
 
     --sectionBg: #B891C0;
     --sectionText: #111111;
@@ -15,6 +16,7 @@
 
 :root[data-theme='light'] {
     --primaryBg: #F4F4F4;
+    --secondaryBg: #111111;
     
     --sectionBg: #602C6A;
     --sectionText: #EEEEEE;
@@ -244,10 +246,14 @@ section {
     margin-bottom: 1rem;
 }
 
+/* About and Technologies styles */
+
 .about {
     background-color: var(--sectionBg);
-    color: var(--sectionText);
+    color: var(--secondaryText);
 }
+
+/* Technologies styles */
 
 .technologiesGrid {
     display: grid;
@@ -257,19 +263,36 @@ section {
 }
 
 .technologiesItem {
+    width: 5.8rem;
+    height: 5.8rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
     text-align: center;
+    border: 1px solid var(--primaryColor);
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.technologiesItem:hover {
+    border-color: var(--secondaryColor);
+    font-weight: 500;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
 }
 
 .technologiesIcon {
-    width: 50px;
-    height: 50px;
+    width: 1.8rem;
+    height: 1.8rem;
     object-fit: contain;
     filter:invert(1);
     transition: filter 0.3s ease;
+}
+
+.technologiesName {
+    font-size: 0.65rem;
+    font-weight: 300;
 }
 
 html[data-theme='light'] .technologiesIcon {
